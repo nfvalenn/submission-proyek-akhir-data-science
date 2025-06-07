@@ -34,11 +34,10 @@ st.markdown(theme_css, unsafe_allow_html=True)
 
 # Halaman Beranda
 if page == "🏠 Beranda":
-    st.title("📊 Dashboard Dropout Mahasiswa")
-    st.markdown("Oleh: Nabila Febriyanti Valentin/@nfvalenn02")
     st.markdown("""
     <iframe width="100%" height="700" src="https://lookerstudio.google.com/embed/reporting/477e15a5-35db-410a-ba02-4b69716d8e1a/page/z1GNF" frameborder="0" style="border:1px solid #ccc; border-radius:10px;" allowfullscreen></iframe>
     """, unsafe_allow_html=True)
+    st.markdown("Oleh: Nabila Febriyanti Valentin/@nfvalenn02")
 
 # Halaman Prediksi
 elif page == "🔍 Prediksi":
