@@ -53,7 +53,28 @@ elif page == "🔍 Prediksi":
     with st.form("form_prediksi"):
         col1, col2 = st.columns(2)
         with col1:
-            Course = st.selectbox("🎓 Program Studi (Kode)", list(range(33)))
+            course_options = {
+                33: 'Computer Science',
+                171: 'Nursing',
+                8014: 'Business Management',
+                9003: 'Law',
+                9070: 'Psychology',
+                9991: 'Veterinary Nursing',
+                9085: 'Social Service',
+                9119: 'Tourism',
+                9130: 'Communication Design',
+                9147: 'Marketing',
+                9238: 'Journalism and Communication',
+                9254: 'Basic Education',
+                9500: 'Management',
+                9556: 'Accounting',
+                9670: 'Solicitor',
+                9773: 'Management (Evening)',
+                9853: 'Social Work (Evening)'
+            }
+            course_name = st.selectbox("🎓 Program Studi", list(course_options.values()))
+            Course = [k for k, v in course_options.items() if v == course_name][0]
+
             Admission_grade = st.number_input("📝 Nilai Masuk (0–200)", min_value=0.0, max_value=200.0, value=100.0)
             Gender = st.selectbox("👤 Jenis Kelamin", [("Laki-laki", 0), ("Perempuan", 1)], format_func=lambda x: x[0])[1]
             Age_at_enrollment = st.number_input("🎂 Usia Saat Masuk Kuliah", min_value=16, max_value=60, value=18)
