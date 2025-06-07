@@ -44,6 +44,8 @@ Proyek ini mencakup:
   * Python (pandas, matplotlib/seaborn, scikit-learn, xgboost)
   * Google Colab untuk analisis
   * Looker Studio untuk dashboard visualisasi
+  * Streamlit untuk deploy aplikasi berbasis web
+  * VsCode untuk membuat kode streamlitnya
 * **Model Machine Learning** disimpan dalam format `.joblib` dan digunakan dalam aplikasi interaktif Streamlit.
 
 ---
@@ -58,7 +60,9 @@ Dashboard membantu pihak manajemen dan akademik untuk:
 * Mengevaluasi efektivitas intervensi berdasarkan kelompok risiko.
 
 📎 **Link Dashboard**: [Looker Studio - Jaya Jaya Institute](https://lookerstudio.google.com/reporting/477e15a5-35db-410a-ba02-4b69716d8e1a)
-📎 Link Aplikasi Prediksi Dropout (Streamlit): https://submission-proyek-akhir-data-science-nabila-febriyanti-valentin.streamlit.app/
+
+📎 **Link Aplikasi Prediksi Dropout (Streamlit)**: https://submission-proyek-akhir-data-science-nabila-febriyanti-valentin.streamlit.app/
+
 ---
 
 ### ✅ Conclusion
