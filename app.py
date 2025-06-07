@@ -45,7 +45,7 @@ elif page == "🔍 Prediksi":
     st.title("🔍 Prediksi Risiko Dropout Mahasiswa")
 
     # Load model
-    model_path = os.path.join(os.path.dirname(__file__), "model.joblib")
+    model_path = os.path.join(os.path.dirname(__file__), "model", "model.joblib")
     if not os.path.exists(model_path):
         st.error("❌ File model `model.joblib` tidak ditemukan.")
         st.stop()
