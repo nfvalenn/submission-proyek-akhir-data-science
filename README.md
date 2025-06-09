@@ -47,8 +47,6 @@ Proyek ini mencakup:
   * Streamlit untuk deploy aplikasi berbasis web
   * VsCode untuk membuat kode streamlitnya
 * **Model Machine Learning** disimpan dalam format `.joblib` dan digunakan dalam aplikasi interaktif Streamlit.
-  
-Sudah saya buka dan tinjau repositori GitHub kamu: [nfvalenn/submission-proyek-akhir-data-science](https://github.com/nfvalenn/submission-proyek-akhir-data-science). Berikut revisi dan penyisipan **penjelasan setup environment** yang langsung bisa kamu tambahkan di bagian `README.md` (tepat di bawah subjudul **🧪 Persiapan**):
 
 ---
 
@@ -110,22 +108,33 @@ Hasil proyek menunjukkan bahwa:
 * **Kedisiplinan membayar UKT** dan **status debitur** sangat berkorelasi dengan peningkatan risiko dropout.
 * **Mahasiswa yang tidak menerima beasiswa** dan **memiliki kebutuhan khusus** lebih rentan keluar dari sistem pendidikan.
 * Model terbaik adalah **Random Forest** dengan **akurasi 92.6%** dan **F1-score > 92%**, yang siap digunakan sebagai alat bantu prediksi dropout mahasiswa secara real-time.
-
+  
+Karakteristik umum mahasiswa yang dropout adalah:
+- Rata-rata nilai semester 1 & 2 di bawah 10.
+- Tidak mendapatkan beasiswa.
+- Status pembayaran tidak up to date.
+- Tidak memiliki kredit semester sebelumnya.
+- Berasal dari jalur pendaftaran dan program studi tertentu yang memiliki dropout rate tinggi.
+  
 ---
 
 ### 🛠️ Rekomendasi Action Items
 
-* **Intervensi Akademik Dini**
-  Identifikasi mahasiswa dengan nilai semester awal rendah untuk diberikan program pembinaan akademik intensif.
+1. **Intervensi Akademik Dini**
+   - Target: Mahasiswa dengan **nilai rata-rata semester 1 atau 2 < 10**.
+   - Solusi: Program pembinaan akademik mingguan dan tutor sebaya.
 
-* **Subsidi dan Beasiswa**
-  Perluasan cakupan beasiswa atau program subsidi untuk mahasiswa berisiko tinggi secara finansial.
+2. **Perluasan Skema Beasiswa**
+   - Target: Mahasiswa yang bukan penerima beasiswa dan memiliki nilai awal baik (≥10).
+   - Solusi: Sistem seleksi otomatis berdasarkan data ekonomi & prestasi.
 
-* **Pendampingan Mahasiswa Baru**
-  Buat program mentoring dan adaptasi sosial khusus bagi mahasiswa baru dan mahasiswa dengan kebutuhan khusus.
+3. **Pendampingan Mahasiswa Baru & Berkebutuhan Khusus**
+   - Solusi: Sistem onboarding, konseling awal, dan mentor inklusi sosial.
 
-* **Penerapan Sistem Peringatan Dini**
-  Gunakan model prediktif berbasis Random Forest untuk memberi sinyal ke dosen wali dan bagian akademik terhadap mahasiswa berisiko dropout.
+4. **Sistem Peringatan Dini Berbasis Machine Learning**
+   - Implementasi: Dashboard Streamlit dengan integrasi model Random Forest.
+   - Output: Risiko dropout & peringatan otomatis ke wali akademik.
 
-* **Kesejahteraan dan Konseling**
-  Sediakan layanan konseling psikologis, akademik, dan finansial sebagai dukungan terhadap kesejahteraan mahasiswa secara menyeluruh.
+5. **Layanan Konseling Terintegrasi**
+   - Fokus: Masalah akademik, psikososial, dan finansial.
+   - Target: Mahasiswa dengan skor risiko dropout > 0.7 (skala 0–1).
