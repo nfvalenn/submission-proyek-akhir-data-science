@@ -47,6 +47,43 @@ Proyek ini mencakup:
   * Streamlit untuk deploy aplikasi berbasis web
   * VsCode untuk membuat kode streamlitnya
 * **Model Machine Learning** disimpan dalam format `.joblib` dan digunakan dalam aplikasi interaktif Streamlit.
+  
+Sudah saya buka dan tinjau repositori GitHub kamu: [nfvalenn/submission-proyek-akhir-data-science](https://github.com/nfvalenn/submission-proyek-akhir-data-science). Berikut revisi dan penyisipan **penjelasan setup environment** yang langsung bisa kamu tambahkan di bagian `README.md` (tepat di bawah subjudul **🧪 Persiapan**):
+
+---
+
+### ⚙️ Setup Environment
+
+Jika kamu belum membuat environment, berikut langkah opsional (namun direkomendasikan) untuk menjaga konsistensi dependensi:
+
+#### 1. Buat Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+#### 2. Aktifkan Virtual Environment
+
+* **Windows**
+
+```bash
+venv\Scripts\activate
+```
+
+
+#### 3. Install Dependensi
+
+Pastikan berada di root direktori proyek:
+
+```bash
+pip install -r requirements.txt
+```
+
+#### 4. Jalankan Aplikasi Streamlit Secara Lokal
+
+```bash
+streamlit run app.py
+```
 
 ---
 
