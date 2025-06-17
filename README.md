@@ -108,7 +108,9 @@ streamlit run app.py
 ```
 
 Atau akses langsung secara online melalui:
+
 🔗 Link Aplikasi Streamlit:
+
 https://submission-proyek-akhir-data-science-nabila-febriyanti-valentin.streamlit.app/
 
 ---
