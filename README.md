@@ -100,6 +100,19 @@ Dashboard membantu pihak manajemen dan akademik untuk:
 
 ---
 
+### 🤖 Menjalankan Sistem Machine Learning
+Prototipe sistem prediksi dropout telah dibuat berbasis web menggunakan Streamlit. Berikut cara menjalankannya:
+
+```bash
+streamlit run app.py
+```
+
+Atau akses langsung secara online melalui:
+🔗 Link Aplikasi Streamlit:
+https://submission-proyek-akhir-data-science-nabila-febriyanti-valentin.streamlit.app/
+
+---
+
 ### ✅ Conclusion
 
 Hasil proyek menunjukkan bahwa:
